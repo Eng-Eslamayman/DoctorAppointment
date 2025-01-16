@@ -5,6 +5,24 @@ VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAppointment", "DoctorAppointment\DoctorAppointment.csproj", "{7D27257C-06AD-44ED-8EAB-5E9628D81194}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F87202EB-A625-46BF-80BA-AAE4BA4E86E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{CBF37C3E-3A73-4E7A-8155-12E277EF691E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{44970A7C-C8CB-4D60-92D0-283A644B6AE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppointmentConfirmation", "AppointmentConfirmation", "{66B89E93-BBE3-46CF-8071-56B2D8D4CE82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppointmentBooking", "AppointmentBooking", "{C4679F1B-A290-4F85-BE62-DAC865463C35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAppointment.Modules.AppointmentBooking.Domain", "DoctorAppointment.Modules.AppointmentBooking.Domain\DoctorAppointment.Modules.AppointmentBooking.Domain.csproj", "{5E3FC7B2-9745-4362-9633-B32F021DA4B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAppointment.Modules.AppointmentBooking.Application", "DoctorAppointment.Modules.AppointmentBooking.Application\DoctorAppointment.Modules.AppointmentBooking.Application.csproj", "{F6429D80-792B-46EA-986D-717BBBBC002A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAppointment.Modules.AppointmentBooking.Infrastructure", "DoctorAppointment.Modules.AppointmentBooking.Infrastructure\DoctorAppointment.Modules.AppointmentBooking.Infrastructure.csproj", "{89DD2679-D55A-42F1-A1B9-59477304AC9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAppointment.Modules.AppointmentBooking.Presentation", "DoctorAppointment.Modules.AppointmentBooking.Presentation\DoctorAppointment.Modules.AppointmentBooking.Presentation.csproj", "{645E2F97-88FA-4010-A926-A2DE85CD1695}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +33,36 @@ Global
 		{7D27257C-06AD-44ED-8EAB-5E9628D81194}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D27257C-06AD-44ED-8EAB-5E9628D81194}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D27257C-06AD-44ED-8EAB-5E9628D81194}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E3FC7B2-9745-4362-9633-B32F021DA4B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E3FC7B2-9745-4362-9633-B32F021DA4B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E3FC7B2-9745-4362-9633-B32F021DA4B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E3FC7B2-9745-4362-9633-B32F021DA4B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6429D80-792B-46EA-986D-717BBBBC002A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6429D80-792B-46EA-986D-717BBBBC002A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6429D80-792B-46EA-986D-717BBBBC002A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6429D80-792B-46EA-986D-717BBBBC002A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89DD2679-D55A-42F1-A1B9-59477304AC9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89DD2679-D55A-42F1-A1B9-59477304AC9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89DD2679-D55A-42F1-A1B9-59477304AC9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89DD2679-D55A-42F1-A1B9-59477304AC9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{645E2F97-88FA-4010-A926-A2DE85CD1695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{645E2F97-88FA-4010-A926-A2DE85CD1695}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{645E2F97-88FA-4010-A926-A2DE85CD1695}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{645E2F97-88FA-4010-A926-A2DE85CD1695}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7D27257C-06AD-44ED-8EAB-5E9628D81194} = {CBF37C3E-3A73-4E7A-8155-12E277EF691E}
+		{CBF37C3E-3A73-4E7A-8155-12E277EF691E} = {F87202EB-A625-46BF-80BA-AAE4BA4E86E6}
+		{44970A7C-C8CB-4D60-92D0-283A644B6AE4} = {F87202EB-A625-46BF-80BA-AAE4BA4E86E6}
+		{66B89E93-BBE3-46CF-8071-56B2D8D4CE82} = {44970A7C-C8CB-4D60-92D0-283A644B6AE4}
+		{C4679F1B-A290-4F85-BE62-DAC865463C35} = {44970A7C-C8CB-4D60-92D0-283A644B6AE4}
+		{5E3FC7B2-9745-4362-9633-B32F021DA4B7} = {C4679F1B-A290-4F85-BE62-DAC865463C35}
+		{F6429D80-792B-46EA-986D-717BBBBC002A} = {C4679F1B-A290-4F85-BE62-DAC865463C35}
+		{89DD2679-D55A-42F1-A1B9-59477304AC9A} = {C4679F1B-A290-4F85-BE62-DAC865463C35}
+		{645E2F97-88FA-4010-A926-A2DE85CD1695} = {C4679F1B-A290-4F85-BE62-DAC865463C35}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E3D633FE-268D-4396-A433-010AF798F2AA}
