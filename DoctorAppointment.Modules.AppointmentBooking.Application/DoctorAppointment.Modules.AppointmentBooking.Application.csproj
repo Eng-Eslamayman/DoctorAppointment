@@ -7,11 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DoctorAppointment.Modules.AppointmentBooking.Domain\DoctorAppointment.Modules.AppointmentBooking.Domain.csproj" />
+    <Compile Remove="Queries\**" />
+    <EmbeddedResource Remove="Queries\**" />
+    <None Remove="Queries\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Queries\" />
+    <ProjectReference Include="..\DoctorAppointment.Modules.AppointmentBooking.Domain\DoctorAppointment.Modules.AppointmentBooking.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
