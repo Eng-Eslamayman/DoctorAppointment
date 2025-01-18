@@ -11,7 +11,8 @@ namespace DoctorAppointment.Modules.AppointmentBooking.Application.Commands.Book
     {
         public Task<Guid> Handle(BookAppointmentCommand request, CancellationToken cancellationToken)
         {
-            
+
+            return null;
         }
 
 

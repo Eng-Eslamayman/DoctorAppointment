@@ -1,12 +1,11 @@
-﻿
-using Service.Repository_Layer_In_Memory;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TraditionalData;
 using TraditionalService.Abstracts;
+using TraditionalService.Repository_Layer_In_Memory;
 
 namespace TraditionalService.Implementations
 {
