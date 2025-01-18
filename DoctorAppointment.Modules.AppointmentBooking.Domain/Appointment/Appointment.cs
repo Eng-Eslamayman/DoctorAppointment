@@ -15,3 +15,4 @@ public class Appointment(Guid slotId, Guid patientId, string patientName, DateTi
     public DateTime ReservedAt { get; private set; } = reservedAt;
 }
 
+

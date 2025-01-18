@@ -13,5 +13,7 @@ namespace DoctorAppointment.Modules.AppointmentBooking.Application.Commands.Book
         {
             
         }
+
+
     }
 }

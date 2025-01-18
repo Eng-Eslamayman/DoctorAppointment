@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAppointment.Modules.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAppointment.Modules.AppointmentBooking.Presentation", "DoctorAppointment.Modules.AppointmentBooking.Presentation\DoctorAppointment.Modules.AppointmentBooking.Presentation.csproj", "{645E2F97-88FA-4010-A926-A2DE85CD1695}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{40FB865F-DCC7-4497-A28C-A4F598F69D3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLayer", "SharedLayer\SharedLayer.csproj", "{9E1663BC-94D9-4B96-8947-5B741B56F58F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +53,10 @@ Global
 		{645E2F97-88FA-4010-A926-A2DE85CD1695}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{645E2F97-88FA-4010-A926-A2DE85CD1695}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{645E2F97-88FA-4010-A926-A2DE85CD1695}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E1663BC-94D9-4B96-8947-5B741B56F58F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E1663BC-94D9-4B96-8947-5B741B56F58F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E1663BC-94D9-4B96-8947-5B741B56F58F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E1663BC-94D9-4B96-8947-5B741B56F58F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +71,8 @@ Global
 		{F6429D80-792B-46EA-986D-717BBBBC002A} = {C4679F1B-A290-4F85-BE62-DAC865463C35}
 		{89DD2679-D55A-42F1-A1B9-59477304AC9A} = {C4679F1B-A290-4F85-BE62-DAC865463C35}
 		{645E2F97-88FA-4010-A926-A2DE85CD1695} = {C4679F1B-A290-4F85-BE62-DAC865463C35}
+		{40FB865F-DCC7-4497-A28C-A4F598F69D3E} = {F87202EB-A625-46BF-80BA-AAE4BA4E86E6}
+		{9E1663BC-94D9-4B96-8947-5B741B56F58F} = {40FB865F-DCC7-4497-A28C-A4F598F69D3E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E3D633FE-268D-4396-A433-010AF798F2AA}
