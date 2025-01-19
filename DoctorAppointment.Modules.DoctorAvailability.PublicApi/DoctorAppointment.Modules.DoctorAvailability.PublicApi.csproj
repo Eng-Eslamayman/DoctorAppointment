@@ -7,8 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DoctorAppointment.Modules.DoctorAvailability.PublicApi\DoctorAppointment.Modules.DoctorAvailability.PublicApi.csproj" />
-    <ProjectReference Include="..\SharedLayer\SharedLayer.csproj" />
+    <ProjectReference Include="..\DoctorAppointment.Modules.DoctorAvailability.Domain\DoctorAppointment.Modules.DoctorAvailability.Domain.csproj" />
     <ProjectReference Include="..\TraditionalData\TraditionalData.csproj" />
   </ItemGroup>
 

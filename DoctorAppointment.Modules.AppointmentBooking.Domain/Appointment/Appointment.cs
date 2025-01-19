@@ -6,13 +6,27 @@ using System.Threading.Tasks;
 
 namespace DoctorAppointment.Modules.AppointmentBooking.Domain.Appointment;
 
-public class Appointment(Guid slotId, Guid patientId, string patientName, DateTime reservedAt)
+public class Appointment
 {
-    public Guid Id { get; private set; } = Guid.NewGuid();
-    public Guid SlotId { get; private set; } = slotId;
-    public Guid PatientId { get; private set; } = patientId;
-    public string? PatientName { get; private set; } = patientName;
-    public DateTime ReservedAt { get; private set; } = reservedAt;
+    private Appointment(Guid id, Guid slotId, Guid patientId, string patientName, DateTime reservedAt)
+    {
+        Id = id;
+        SlotId = slotId;
+        PatientId = patientId;
+        PatientName = patientName;
+        ReservedAt = reservedAt;
+    }
+
+    public static Appointment Create(Guid id, Guid slotId, Guid patientId, string patientName, DateTime reservedAt)
+    {
+        return new Appointment(id, slotId, patientId, patientName, reservedAt);
+    }
+
+    public Guid Id { get; private set; } 
+    public Guid SlotId { get; private set; }
+    public Guid PatientId { get; private set; }
+    public string? PatientName { get; private set; }
+    public DateTime ReservedAt { get; private set; }
 }
 
 
