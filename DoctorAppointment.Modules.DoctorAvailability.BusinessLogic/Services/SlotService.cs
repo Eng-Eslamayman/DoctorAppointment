@@ -7,7 +7,10 @@ namespace DoctorAppointment.Modules.DoctorAvailability.BusinessLogic.Services
 {
     public class SlotService(ISlotRepository slotRepository) : ISlotService
     {
-        public IEnumerable<Slot> GetAvailableSlots() => slotRepository.GetAvailableSlots();
+        public IEnumerable<Slot> GetAvailableSlots()
+        {
+            return slotRepository.GetAvailableSlots();
+        } 
         public Task<Slot> AddAsync(Slot slot) =>
             slotRepository.AddSlot(slot);
 

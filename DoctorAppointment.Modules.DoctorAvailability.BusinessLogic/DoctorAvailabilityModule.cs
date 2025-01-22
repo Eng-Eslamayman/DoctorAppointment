@@ -19,7 +19,7 @@ public static class DoctorAvailabilityModule
 
     private static void AddInfrastructure(this IServiceCollection serviceCollection)
     {
-        serviceCollection.AddScoped<ISlotRepository, InMemorySlotRepository>();
+        serviceCollection.AddScoped<ISlotRepository, SlotRepository>();
         serviceCollection.AddScoped<ISlotService, SlotService>();
         serviceCollection.AddScoped<ISlotApi, SlotApi>();
     }

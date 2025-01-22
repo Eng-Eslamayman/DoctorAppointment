@@ -7,6 +7,6 @@ using MediatR;
 
 namespace DoctorAppointment.Modules.AppointmentBooking.Application.Commands.BookAppointment
 {
-    public record BookAppointmentCommand(Guid SlotId, Guid PatientId, string PatientName)
+    public record BookAppointmentCommand(string PatientName)
         : IRequest<Guid>;
 }

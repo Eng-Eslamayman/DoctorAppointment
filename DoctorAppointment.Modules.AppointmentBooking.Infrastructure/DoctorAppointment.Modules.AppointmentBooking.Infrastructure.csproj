@@ -10,6 +10,7 @@
     <ProjectReference Include="..\DoctorAppointment.Modules.AppointmentBooking.Application\DoctorAppointment.Modules.AppointmentBooking.Application.csproj" />
     <ProjectReference Include="..\DoctorAppointment.Modules.AppointmentBooking.Domain\DoctorAppointment.Modules.AppointmentBooking.Domain.csproj" />
     <ProjectReference Include="..\DoctorAppointment.Modules.AppointmentBooking.Presentation\DoctorAppointment.Modules.AppointmentBooking.Presentation.csproj" />
+    <ProjectReference Include="..\DoctorAppointment.Modules.DoctorAvailability.BusinessLogic\DoctorAppointment.Modules.DoctorAvailability.BusinessLogic.csproj" />
   </ItemGroup>
 
 </Project>
