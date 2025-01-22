@@ -16,7 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SharedLayer\SharedLayer.csproj" />
+    <ProjectReference Include="..\DoctorAppointment.Modules.DoctorAvailability.BusinessLogic\DoctorAppointment.Modules.DoctorAvailability.BusinessLogic.csproj" />
+    <ProjectReference Include="..\DoctorAppointment.Modules.DoctorAvailability.Presentation\DoctorAppointment.Modules.DoctorAvailability.Presentation.csproj" />
   </ItemGroup>
 
 </Project>

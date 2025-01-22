@@ -6,9 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\DoctorAppointment.Modules.DoctorAvailability.Domain\DoctorAppointment.Modules.DoctorAvailability.Domain.csproj" />
-    <ProjectReference Include="..\TraditionalData\TraditionalData.csproj" />
-  </ItemGroup>
-
 </Project>

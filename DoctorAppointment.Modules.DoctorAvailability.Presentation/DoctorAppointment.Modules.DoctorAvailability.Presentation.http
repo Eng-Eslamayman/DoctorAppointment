@@ -1,6 +1,0 @@
-@DoctorAppointment.Modules.DoctorAvailability.Presentation_HostAddress = http://localhost:5010
-
-GET {{DoctorAppointment.Modules.DoctorAvailability.Presentation_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

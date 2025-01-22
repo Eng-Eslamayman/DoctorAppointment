@@ -1,4 +1,10 @@
-﻿namespace DoctorAppointment.Modules.DoctorAvailability.Domain
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DoctorAppointment.Modules.DoctorAvailability.Domain
 {
     public class Slot
     {
