@@ -13,7 +13,7 @@ namespace DoctorAppointment.Modules.DoctorAvailability.BusinessLogic.Services.In
     {
         IEnumerable<Slot> GetAvailableSlots();
         Task<IEnumerable<DoctorAvailability.PublicApi.DoctorAvailableSlotDto>> GetAvailableSlotsGroupedByDoctor();
-        Task<Slot> AddAsync(Slot slot);
+        Task<Slot> AddAsync(SlotDto slot);
         Task<Slot> GetAsync(Guid slotId);
     }
 }

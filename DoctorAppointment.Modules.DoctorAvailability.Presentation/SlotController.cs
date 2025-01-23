@@ -20,10 +20,10 @@ namespace DoctorAppointment.Modules.DoctorAvailability.Presentation
         }
 
         [HttpPost("slots")]
-        public IActionResult AddSlot([FromBody] Slot slotDto)
+        public async Task<IActionResult> AddSlot([FromForm] SlotDto slotDto)
         {
-            var createdSlot = slotService.AddAsync(slotDto);
-            return Ok(createdSlot);
+            var createdSlot = await slotService.AddAsync(slotDto);
+            return Ok(createdSlot.Id);
         }
     }
 }

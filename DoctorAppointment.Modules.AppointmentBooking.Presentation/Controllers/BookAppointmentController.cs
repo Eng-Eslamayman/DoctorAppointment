@@ -15,7 +15,7 @@ namespace DoctorAppointment.Modules.AppointmentBooking.Presentation.Controllers
     [Route("api/bookAppointment")]
     public class BookAppointmentController(IMediator mediator,ISlotApi slotApi): ControllerBase
     {
-        [HttpGet]
+        [HttpPost]
         public async Task<IActionResult> Book(string patientName, Guid slotId)
         {
             var book = await mediator.Send(new BookAppointmentCommand(patientName, slotId));
