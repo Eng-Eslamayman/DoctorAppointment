@@ -15,6 +15,8 @@ public class Appointment
         PatientId = patientId;
         PatientName = patientName;
         ReservedAt = reservedAt;
+        IsCompleted = false;
+        IsCancelled = false;
     }
 
     public static Appointment Create(Guid id, Guid slotId, Guid patientId, string patientName, DateTime reservedAt)
@@ -25,8 +27,10 @@ public class Appointment
     public Guid Id { get; private set; } 
     public Guid SlotId { get; private set; }
     public Guid PatientId { get; private set; }
-    public string? PatientName { get; private set; }
+    public string PatientName { get; private set; }
     public DateTime ReservedAt { get; private set; }
+    public bool IsCompleted { get; set; }
+    public bool IsCancelled { get; set; }
 }
 
 
