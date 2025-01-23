@@ -8,11 +8,11 @@ namespace DoctorAppointment.Modules.AppointmentBooking.PublicApi
 {
     public class Appointment
     {
-        public Guid Id { get; private set; }
-        public Guid SlotId { get; private set; }
-        public Guid PatientId { get; private set; }
-        public string? PatientName { get; private set; }
-        public DateTime ReservedAt { get; private set; }
+        public Guid Id { get; set; }
+        public Guid SlotId { get; set; }
+        public Guid PatientId { get; set; }
+        public string? PatientName { get; set; }
+        public DateTime ReservedAt { get; set; }
         public bool IsCompleted { get; set; }
         public bool IsCancelled { get; set; }
     }

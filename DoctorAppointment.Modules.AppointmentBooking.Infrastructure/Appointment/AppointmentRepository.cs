@@ -12,10 +12,30 @@ namespace DoctorAppointment.Modules.AppointmentBooking.Infrastructure.Appointmen
              return Task.CompletedTask;
         }
 
-        public async Task<Domain.Appointment.Appointment?> GetByIdAsync(Guid id)
+        public IEnumerable<Domain.Appointment.Appointment> GetAll()
         {
-            
-            return _appointments.SingleOrDefault(a => a.Id == id);
+            return _appointments;
+        }
+
+        public Domain.Appointment.Appointment? GetById(Guid id)
+        {
+            var appointment = _appointments.SingleOrDefault(a => a.Id == id)!;
+            return appointment;
+        }
+
+        public void Update(Domain.Appointment.Appointment appointment)
+        {
+            var existingAppointment = _appointments.FirstOrDefault(a => a.Id == appointment.Id);
+
+            if (existingAppointment != null)
+            {
+                existingAppointment.IsCompleted = appointment.IsCompleted;
+                existingAppointment.IsCancelled = appointment.IsCancelled;
+            }
+            else
+            {
+                throw new Exception("Appointment not found.");
+            }
         }
     }
 }

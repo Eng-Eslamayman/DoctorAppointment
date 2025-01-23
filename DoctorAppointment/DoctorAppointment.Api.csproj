@@ -19,6 +19,7 @@
     <ProjectReference Include="..\DoctorAppointment.Modules.AppointmentBooking.Infrastructure\DoctorAppointment.Modules.AppointmentBooking.Infrastructure.csproj" />
     <ProjectReference Include="..\DoctorAppointment.Modules.AppointmentBooking.Presentation\DoctorAppointment.Modules.AppointmentBooking.Presentation.csproj" />
     <ProjectReference Include="..\DoctorAppointment.Modules.AppointmentConfirmation.Infrastructure\DoctorAppointment.Modules.AppointmentConfirmation.Infrastructure.csproj" />
+    <ProjectReference Include="..\DoctorAppointment.Modules.DoctorAppointmentManagement.Presentation\DoctorAppointment.Modules.DoctorAppointmentManagement.Presentation.csproj" />
     <ProjectReference Include="..\DoctorAppointment.Modules.DoctorAvailability.BusinessLogic\DoctorAppointment.Modules.DoctorAvailability.BusinessLogic.csproj" />
     <ProjectReference Include="..\DoctorAppointment.Modules.DoctorAvailability.Presentation\DoctorAppointment.Modules.DoctorAvailability.Presentation.csproj" />
   </ItemGroup>

@@ -9,6 +9,8 @@ namespace DoctorAppointment.Modules.AppointmentBooking.Domain.Appointment
     public interface IAppointmentRepository
     { 
         Task AddAsync(Appointment appointment);
-        Task<Appointment?> GetByIdAsync(Guid id);
+        Appointment? GetById(Guid id);
+        IEnumerable<Appointment> GetAll();
+
     }
 }
